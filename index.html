@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaundryPro | Professional Laundry Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">LaundryPro</div>
+
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="username">Hi, Vaishnavi</div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="left">
+        <h1>Professional Laundry Services</h1>
+        <p>
+            Premium care for your everyday wear. From regular washing to delicate garment care,
+            we deliver spotless results with doorstep pickup and fast delivery.
+        </p>
+        <button class="btn" id="bookBtn">Book a Service</button>
+    </div>
+
+    <div class="right">
+        <img src="Laundry.jpg" alt="Laundry Service">
+    </div>
+</div>
+
+<!-- ACHIEVEMENTS -->
+<section class="achievements-banner">
+    <h2>Why Customers Trust Us</h2>
+
+    <div class="achievements-box">
+        <div class="ach-item">
+            <h3>15+</h3>
+            <p>Services Offered</p>
+        </div>
+        <div class="ach-item">
+            <h3>240+</h3>
+            <p>Happy Customers</p>
+        </div>
+        <div class="ach-item">
+            <h3>2+ Years</h3>
+            <p>Industry Experience</p>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES & BOOKING -->
+<div class="booking-section" id="services">
+
+    <div class="services-left">
+        <h2>Our Services</h2>
+        <p>Select services and add them to your cart.</p>
+
+        <div class="service-item">
+            <span>Dry Cleaning</span>
+            <span>₹200</span>
+            <button onclick="addItem('Dry Cleaning',200)">Add</button>
+        </div>
+
+        <div class="service-item">
+            <span>Wash & Fold</span>
+            <span>₹100</span>
+            <button onclick="addItem('Wash & Fold',100)">Add</button>
+        </div>
+
+        <div class="service-item">
+            <span>Ironing</span>
+            <span>₹30</span>
+            <button onclick="addItem('Ironing',30)">Add</button>
+        </div>
+
+        <div class="service-item">
+            <span>Stain Removal</span>
+            <span>₹500</span>
+            <button onclick="addItem('Stain Removal',500)">Add</button>
+        </div>
+
+        <div class="service-item">
+            <span>Leather & Suede Cleaning</span>
+            <span>₹999</span>
+            <button onclick="addItem('Leather & Suede Cleaning',999)">Add</button>
+        </div>
+
+        <div class="service-item">
+            <span>Wedding Dress Cleaning</span>
+            <span>₹2800</span>
+            <button onclick="addItem('Wedding Dress Cleaning',2800)">Add</button>
+        </div>
+    </div>
+
+    <div class="services-right">
+        <h2>Your Cart</h2>
+
+        <table id="cart-table">
+            <tr>
+                <th>No</th>
+                <th>Service</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+        </table>
+
+        <div class="total-box">
+            Total: ₹<span id="totalAmount">0</span>
+        </div>
+
+        <h2>Book Now</h2>
+        <input id="fullName" type="text" placeholder="Full Name">
+        <input id="email" type="email" placeholder="Email">
+        <input id="phone" type="text" placeholder="Phone Number">
+
+        <button class="book-btn">Confirm Booking</button>
+        <p id="bookingMsg" class="success"></p>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<div class="about" id="about">
+    <h2>About LaundryPro</h2>
+    <p>
+        We combine professional expertise, modern equipment, and eco-friendly practices
+        to deliver premium laundry care. Every garment is handled with precision and respect.
+    </p>
+</div>
+
+<!-- CONTACT -->
+<div class="contact" id="contact">
+    <h2>Stay Connected</h2>
+
+    <div class="newsletter">
+        <input id="subName" type="text" placeholder="Your Name">
+        <input id="subEmail" type="email" placeholder="Your Email">
+        <button class="btn" id="subscribeBtn">Subscribe</button>
+    </div>
+
+    <p id="subMsg" class="success"></p>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h2 class="footer-logo">LaundryPro</h2>
+            <p class="footer-about">Expert Care, Every Wash 🧼</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li>Home</li>
+                <li>Services</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Contact</h3>
+            <p>mail@site.com</p>
+            <p>+91 91234 56780</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <span>📘</span>
+                <span>📸</span>
+                <span>🐦</span>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
