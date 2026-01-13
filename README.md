@@ -32,8 +32,11 @@ This project focuses on translating a real-world service process into a function
 Smart-Laundry-Management-System/
 │
 ├── index.html # Main application structure
+
 ├── style.css # Styling and responsive layout
+
 ├── script.js # Business logic and interactivity
+
 └── README.md # Project documentation
 
 
