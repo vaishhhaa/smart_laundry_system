@@ -29,6 +29,7 @@ This project focuses on translating a real-world service process into a function
 
 ## 📂 Project Structure
 
+
 Smart-Laundry-Management-System/
 │
 ├── index.html # Main application structure
